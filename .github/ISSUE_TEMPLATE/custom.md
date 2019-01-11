@@ -1,2 +1,0 @@
----
-name: Custom issue template
