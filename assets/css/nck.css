@@ -51,7 +51,7 @@
 			nav list > li > ul {position: static;opacity: 0;left: 0;width: 100%;box-shadow: none;}
 			nav list li > ul > li {width: 100%;}
 			main .posts .post {height: 100px;}
-			main .posts .post .post-thumb img {width: 100px;height: 100px;object-fit: contain;}
+			main .posts .post .post-thumb img {width: 100px;height: 100px;min-width: 100%;min-height: 100%;}
 		    main .posts .post .title {padding: 0;font-size: 18px;font-weight: 600;padding: 10px;letter-spacing: normal;line-height: normal;width: calc(100% - 100px);}
 		    main .posts .post .description {display: none;}
 		    main, sidebar {width: 100%;max-width: 100%;}
