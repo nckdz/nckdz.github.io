@@ -20,7 +20,7 @@
 		nav > .btn {display: none;float: right;line-height: 56px;padding: 0 15px 0 15px;cursor: pointer;}
 		i {padding-top: 15px;}
 		main {width: 70%;max-width: 70%;float: left;}
-		.blog {max-width: 100%;overflow-x: hidden;line-height: 22px;}
+		.blog {max-width: 100%;overflow-x: hidden;line-height: 25px;}
 		main .posts {width: calc(100% - 20px);}
 		main .posts .post a {color: #212121;}
 		main .posts .post {border-radius: 5px;box-shadow:0 4px 12px rgba(0,0,0,.1);background: #fff;width: 100%;height: 160px;margin: 10px;overflow: hidden;}
