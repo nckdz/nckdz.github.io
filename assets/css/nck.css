@@ -6,7 +6,7 @@
 	    * {outline: none;word-wrap: break-word;box-sizing: border-box;margin:0;}
 		body {font-family: 'Roboto', sans-serif;background: #ececec;margin: auto;padding-top: 56px;font-size: 16px;line-height: 20px;letter-spacing: 1px;font-weight: 400;animation: fadeIn 2s;-webkit-animation:fadeIn 2s;-moz-animation:fadeIn 2s;}
 		ul, li {list-style: none;}
-		a, a:hover, a:focus {text-decoration: none;}
+		a, a:hover, a:focus {text-decoration: none;color: #212121;}
 		nav {top: 0;left: 0;width: 100%;height: 56px;background: #FFF;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);position: fixed;}
 		nav logo {float: left;font-size: 18px;font-weight: 600;padding: 0 20px 0 20px;line-height: 56px;}
 		nav list {float: right;display: inline-block;}
