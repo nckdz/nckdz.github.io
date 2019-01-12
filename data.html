@@ -1,0 +1,16 @@
+---
+layout: null
+permalink: /data.json
+---
+[{% for post in site.posts %}
+    {
+      "name" : "{{ post.title }}",
+      "link" : "{{ post.url }}",
+      "image" : "{% if post.image %}{{ post.image }}{% else %}https://getuikit.com/v2/docs/images/placeholder_600x400.svg{% endif %}",
+      "date" : {
+         "day" : "{{ post.date | date: "%d" }}",
+         "month" : "{{ post.date | date: "%B" }}",
+         "year" : "{{ post.date | date: "%Y" }}"
+      }
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+]

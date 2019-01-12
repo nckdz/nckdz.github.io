@@ -4,9 +4,8 @@
 	WEBSITE: HTTPS://NCKDZ.GITHUB.IO
 */
 	    * {outline: none;word-wrap: break-word;box-sizing: border-box;margin:0;}
-		body {font-family: 'Roboto', sans-serif;background: #ececec;margin: auto;padding-top: 56px;font-size: 16px;line-height: 18px;letter-spacing: 1px;font-weight: 400;animation: fadeIn 2s;-webkit-animation:fadeIn 2s;-moz-animation:fadeIn 2s;}
+		body {font-family: 'Roboto', sans-serif;background: #ececec;margin: auto;padding-top: 56px;font-size: 16px;line-height: 20px;letter-spacing: 1px;font-weight: 400;animation: fadeIn 2s;-webkit-animation:fadeIn 2s;-moz-animation:fadeIn 2s;}
 		ul, li {list-style: none;}
-		img {max-width: 100%;}
 		a, a:hover, a:focus {text-decoration: none;}
 		nav {top: 0;left: 0;width: 100%;height: 56px;background: #FFF;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);position: fixed;}
 		nav logo {float: left;font-size: 18px;font-weight: 600;padding: 0 20px 0 20px;line-height: 56px;}
@@ -21,6 +20,7 @@
 		i {padding-top: 15px;}
 		main {width: 70%;max-width: 70%;float: left;}
 		.blog {max-width: 100%;overflow-x: hidden;line-height: 25px;}
+		.blog img {max-width: 100%;}
 		main .posts {width: calc(100% - 20px);}
 		main .posts .post a {color: #212121;}
 		main .posts .post {border-radius: 5px;box-shadow:0 4px 12px rgba(0,0,0,.1);background: #fff;width: 100%;height: 160px;margin: 10px;overflow: hidden;}
