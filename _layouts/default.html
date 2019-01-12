@@ -1,25 +1,44 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        <div class="col-main">
-          {{ content }}
-        </div>
-        <div class="col-second">
-          {% include sidebar.html %}
-        </div>
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
+{% include head.html %}
+<body>
+<nav>
+  <logo>NCK</logo>
+  <div class="btn"><i class="material-icons">menu</i></div>
+  <list>
+    <li><a href="#">Menu 1</a>
+    <ul>
+      <li><a href="#">Sub Menu 1</a></li>
+      <li><a href="#">Sub Menu 2</a></li>
+      <li><a href="#">Sub Menu 3</a></li>
+      <li><a href="#">Sub Menu 4</a>
+    </ul>
+        </li>
+        <li><a href="#">Menu 2</a>
+    <ul>
+      <li><a href="#">Sub Menu 1</a></li>
+      <li><a href="#">Sub Menu 2</a></li>
+      <li><a href="#">Sub Menu 3</a></li>
+      <li><a href="#">Sub Menu 4</a>
+    </ul>
+        </li>
+        <li><a href="#">Menu 3</a>
+    <ul>
+      <li><a href="#">Sub Menu 1</a></li>
+      <li><a href="#">Sub Menu 2</a></li>
+      <li><a href="#">Sub Menu 3</a></li>
+      <li><a href="#">Sub Menu 4</a>
+    </ul>
+        </li>
+  </list>
+</nav>
+<main>
+{{ content }}
+</main>
+{% include sidebar.html %}
+{% include footer.html %}
+</body>
 </html>

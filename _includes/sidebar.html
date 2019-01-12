@@ -1,29 +1,6 @@
-<div class="col-box col-box-author">
-  <img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}">
-  <div class="col-box-title name">{{ site.author }}</div>
-  <p>{{ site.profile }}</p>
-  <p class="contact">
-    {% if site.github_username %}
-    <a href="https://github.com/{{ site.github_username }}">GitHub</a>
-    {% endif %}
-    {% if site.twitter_username %}
-    <a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
-    {% endif %}
-    {% for link in site.profile_links %}
-    <a href="{{ link | last }}">{{ link | first }}</a>
-    {% endfor %}
-  </p>
+<sidebar>
+<div class="card">
+  <div class="card-head">Popular Posts</div>
+  <div class="card-body">Lorem ipsum dolor sit amet, docendi ponderum platonem ius ei, cu etiam placerat elaboraret eum. Molestie consetetur et sea. Nec consul appareat vulputate ex, offendit torquatos assueverit ea sed. Eam semper docendi voluptaria ea, putent minimum epicurei at vix, pro unum erant ex. Labitur ornatus iracundia vix id, omittam recusabo liberavisse vel ea. Qui saepe aliquid dignissim id, dicam labore per in, omnium convenire qui ei.</div>
 </div>
-
-<div class="col-box">
-  <div class="col-box-title">Newest Posts</div>
-  <ul class="post-list">
-    {% for post in site.posts limit:5 %}
-      <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
-
-<div class="col-box post-toc hide">
-  <div class="col-box-title">TOC</div>
-</div>
+</sidebar>

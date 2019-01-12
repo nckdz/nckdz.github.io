@@ -1,52 +1,44 @@
 # Site settings
 title: NCK Blog
-url: "https://nckdz.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
-baseurl: "" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
-#timezone: Asia/Chongqing
+url: "https://nckdz.github.io"
+baseurl: ""
 description: >
   Một blog mới sử dụng Jekyll.
 
 # Your information
 email: nck9z2015@gmail.com
 author: Nguyễn Định
-avatar: "/"
-profile: Never late to fix your mistake.
-#twitter_username: twitter_username
-#github_username:  github_username
 profile_links:
   Email: "mailto:nck9z2015@gmail.com"
   GitHub: "https://github.com/nckdz"
-  # You can add more profile links above, or edit _includes/sidebar.html 
-
-# Comment Service (Disqus or 多说)
-#  choose one and un-comment the line to active it
-#disqus_shortname: xxx   # get one: https://disqus.com/admin/signup/
-#duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
-
-excerpt_separator: <!--more-->
 
 header:
-  links:             # Links on the header. Link to in-site page with a slash as prefix
+  links:
     About: /about/
     Category: /category/
     Donate: /donate
 
-permalink: /archive/:title
 plugins:
  - jekyll-paginate
- - jekyll-gist
- - jemoji
 
 # Build settings
 paginate: 5
 paginate_path: "page:num"
-
-# https://jekyllrb.com/docs/configuration/#precedence
 defaults:
   -
     scope:
       path: ""
       type: "posts"
     values:
-      layout: "post"
+      layout: "default"
 
+# html minify
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]

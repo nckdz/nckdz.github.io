@@ -1,34 +1,25 @@
 ---
 layout: default
 ---
-
-<div class="home">
-  <a class="rss-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS Feed</a>
-  <h1 class="page-heading">Articles</h1>
-
-  <ul class="post-list">
+<div class="posts">
     {% for post in paginator.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        
-        <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
-
-        <div class="post-excerpt">
-          {%   if post.content contains site.excerpt_separator or post.content != post.excerpt %}{{ post.excerpt }}
-          {%   else %}{{ post.content | lstrip | split: "
-" | first }}{% endif %}
-          <p>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read More &raquo;</a>
-          </p>
-        </div>
-      </li>
+        <div class="post">
+      <div class="post-thumb">  {% if post.thumbnail %}
+<img  alt="{{ post.title | escape }}" title="{{ post.title | escape }}" src="{{ post.thumbnail }}">
+  {% else %}
+  <img  alt="{{ post.title | escape }}" title="{{ post.title | escape }}" src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg">
+  {% endif %}  </div>
+      <div class="title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+      <div class="description">{%  if post.content contains site.excerpt_separator or post.content != post.excerpt %}{{ post.excerpt }}
+          {% else %}{{ post.content | lstrip | split: "
+" | first }}{% endif %}</div>
+      <div style="clear: both;"></div>
+    </div>
     {% endfor %}
-  </ul>
-  
+</div>
+<button class="loadMore">Load More</button>
   <!-- Pagination links -->
-<div class="pagination">
+<!-- <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">PREV</a>
   {% else %}
@@ -40,6 +31,4 @@ layout: default
   {% else %}
     <span class="next ">NEXT</span>
   {% endif %}
-</div>
-
-</div>
+</div> -->
