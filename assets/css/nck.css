@@ -4,7 +4,7 @@
 	WEBSITE: HTTPS://NCKDZ.GITHUB.IO
 */
 	    * {outline: none;word-wrap: break-word;box-sizing: border-box;margin:0;}
-		body {font-family: 'Roboto', sans-serif;background: #ececec;margin: auto;padding-top: 56px;font-size: 16px;line-height: 18px;letter-spacing: 1px;font-weight: 400;}
+		body {font-family: 'Roboto', sans-serif;background: #ececec;margin: auto;padding-top: 56px;font-size: 16px;line-height: 18px;letter-spacing: 1px;font-weight: 400;animation: fadeIn 2s;-webkit-animation:fadeIn 2s;-moz-animation:fadeIn 2s;}
 		ul, li {list-style: none;}
 		img {max-width: 100%;}
 		a, a:hover, a:focus {text-decoration: none;}
@@ -64,3 +64,18 @@
 		@media screen and (min-width: 1200px) {
 			body {max-width: 1200px;}
 		}
+		@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@-webkit-keyframes slideUp {
+ from {
+  -webkit-transform: translate(0px, 30px);
+  opacity: .7;
+ }
+ to {
+  -webkit-transform: translate(0px, 0px);
+  opacity: 1;
+ }
+}
+nav list li:hover > ul {
+ -webkit-animation: slideUp .5s; 
+ animation: slideUp .5s;
+}
